@@ -1,0 +1,43 @@
+Summary:
+  Success rate:	100.00%
+  Total:	30.1299 sec
+  Slowest:	1.6507 sec
+  Fastest:	0.0812 sec
+  Average:	0.1491 sec
+  Requests/sec:	0.9957
+
+  Total data:	11.13 KiB
+  Size/request:	379 B
+  Size/sec:	378 B
+
+Response time histogram:
+  0.081 sec [1]  |■
+  0.238 sec [28] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.395 sec [0]  |
+  0.552 sec [0]  |
+  0.709 sec [0]  |
+  0.866 sec [0]  |
+  1.023 sec [0]  |
+  1.180 sec [0]  |
+  1.337 sec [0]  |
+  1.494 sec [0]  |
+  1.651 sec [1]  |■
+
+Response time distribution:
+  10.00% in 0.0847 sec
+  25.00% in 0.0894 sec
+  50.00% in 0.0945 sec
+  75.00% in 0.0988 sec
+  90.00% in 0.1464 sec
+  95.00% in 0.1488 sec
+  99.00% in 1.6507 sec
+  99.90% in 1.6507 sec
+  99.99% in 1.6507 sec
+
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0510 sec, 0.0510 sec, 0.0510 sec
+  DNS-lookup:	0.0001 sec, 0.0001 sec, 0.0001 sec
+
+Status code distribution:
+  [200] 30 responses
