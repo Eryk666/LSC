@@ -1,0 +1,21 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: job
+spec:
+  template:
+    spec:
+      containers:
+      - name: writer
+        image: busybox
+        command: ["/bin/sh", "-c"]
+        args:
+          - echo "<h1>Hello, World!</h1><p>Lorem ipsum dolor sit amet.</p>" > /data/index.html
+        volumeMounts:
+        - name: nfs-vol
+          mountPath: /data
+      restartPolicy: Never
+      volumes:
+      - name: nfs-vol
+        persistentVolumeClaim:
+          claimName: nfs-pvc
